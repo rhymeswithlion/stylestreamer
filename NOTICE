@@ -1,0 +1,80 @@
+StyleStreamer
+Copyright 2026 Brian Cruz
+
+This product includes software and model weights derived from or dependent
+on the following third-party works. Please review each license carefully
+before distributing this software or its artifacts.
+
+================================================================================
+Magenta RealTime (architecture and upstream weights)
+================================================================================
+
+StyleStreamer is built on the Magenta RealTime model stack
+(SpectroStream audio codec, MusicCoCa style model, and Depthformer LLM),
+originally developed by Google DeepMind and published at:
+
+    https://github.com/magenta/magenta-realtime
+
+Copyright 2025 Google LLC
+Licensed under the Apache License, Version 2.0.
+
+The C++ MLX runtime (vendor/magenta-realtime-mlx-cpp) is a derivative work
+of the Magenta RealTime architecture, reimplemented in C++ and MLX by
+Brian Cruz, and is also licensed under the Apache License, Version 2.0.
+See vendor/magenta-realtime-mlx-cpp/NOTICE for the full upstream attribution.
+
+Model weights distributed via the Hugging Face dataset
+    https://huggingface.co/datasets/rhymeswithlion/magenta-realtime-mlx-cpp
+are derivative works of the upstream Magenta RealTime weights and are
+licensed under the Creative Commons Attribution 4.0 International License
+(CC-BY 4.0), Copyright 2025 Google LLC. Use of those weights is also
+subject to Google's Magenta RealTime Terms of Use, reproduced in the
+dataset README.
+
+The MusicCoCa encoder in that bundle (musiccoca_encoder.safetensors) has
+been lightly fine-tuned by Brian Cruz to better match the outputs of the
+original XLA SavedModel. The fine-tune deltas are licensed under
+Apache 2.0, Copyright 2026 Brian Cruz; the underlying upstream encoder
+weights remain under CC-BY 4.0 as stated above.
+
+================================================================================
+JUCE Framework
+================================================================================
+
+This product uses the JUCE framework, © Raw Material Software Limited,
+licensed under the AGPL v3 (open-source use) or the JUCE 8 Commercial
+Licence. See packages/magenta-rt-juce/JUCE/LICENSE.md for the full text
+and https://juce.com/legal/ for commercial licensing options.
+
+================================================================================
+Apple MLX
+================================================================================
+
+The bundled libmlx.dylib is built from the Apple MLX framework:
+    https://github.com/ml-explore/mlx
+Copyright © 2023 Apple Inc., licensed under the MIT License.
+
+================================================================================
+SentencePiece
+================================================================================
+
+The bundled libsentencepiece dylib is from the SentencePiece library:
+    https://github.com/google/sentencepiece
+Copyright 2016 Google Inc., licensed under the Apache License, Version 2.0.
+
+================================================================================
+PortAudio
+================================================================================
+
+The bundled libportaudio dylib is from the PortAudio project:
+    http://www.portaudio.com
+Copyright © 1999-2011 Ross Bencina and Phil Burk, licensed under the MIT
+License. See http://www.portaudio.com/license.html for the full text.
+
+================================================================================
+Pamplejuce (CMake / project template)
+================================================================================
+
+The CMake project scaffold is derived from Pamplejuce:
+    https://github.com/sudara/pamplejuce
+Copyright © Sudara Williams, licensed under the MIT License.

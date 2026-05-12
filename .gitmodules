@@ -1,0 +1,3 @@
+[submodule "vendor/magenta-realtime-mlx-cpp"]
+	path = vendor/magenta-realtime-mlx-cpp
+	url = https://github.com/rhymeswithlion/magenta-realtime-mlx-cpp.git
