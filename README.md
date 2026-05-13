@@ -4,6 +4,8 @@ A real-time music generation plugin for Apple Silicon Macs, built on the
 [Magenta RealTime](https://github.com/magenta/magenta-realtime) model stack
 (SpectroStream + MusicCoCa + Depthformer) and an optimized C++ MLX runtime.
 
+https://github.com/user-attachments/assets/11d24e52-224c-493e-92c3-2ac8bf91f79a
+
 **Minimum macOS: 26.0** (matches the bundled `libmlx.dylib`)
 
 ---
